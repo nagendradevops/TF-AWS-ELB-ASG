@@ -21,8 +21,8 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region  = "us-east-2"
-  profile = "default1" # this is shared profile
+  #region  = "us-east-2"
+  #profile = "default1" # this is shared profile
 
   #static creds  -> not recomended
 
