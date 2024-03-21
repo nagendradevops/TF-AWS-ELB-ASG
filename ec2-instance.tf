@@ -4,7 +4,7 @@ resource "aws_instance" "my-ec2" {
   subnet_id              = aws_subnet.public_subnet.id
   vpc_security_group_ids = [aws_security_group.mysecgrp.id]
   instance_type          = "t2.micro"
-  key_name               = "terraform-key"
+  #key_name               = "terraform-key"
   count                  = 2
   #user_data = file("apache-install.sh")
   user_data = <<-EOF
