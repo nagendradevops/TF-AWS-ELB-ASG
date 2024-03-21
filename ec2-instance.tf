@@ -1,6 +1,6 @@
 #Create EC2 instance
 resource "aws_instance" "my-ec2" {
-  ami                    = "ami-0e0bf53f6def86294"
+  ami                    = "ami-0d7a109bf30624c99"
   subnet_id              = aws_subnet.public_subnet.id
   vpc_security_group_ids = [aws_security_group.mysecgrp.id]
   instance_type          = "t2.micro"
